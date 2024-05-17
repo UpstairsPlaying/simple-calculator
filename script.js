@@ -26,14 +26,15 @@ function calculateResult() {
     }
 }
 
-function toggleScientific() {
+function toggleCalculatorMode() {
+    const modeSelector = document.getElementById('modeSelector');
+    const simpleButtons = document.querySelector('.buttons.simple');
     const scientificButtons = document.querySelector('.buttons.scientific');
-    const toggleButton = document.getElementById('toggleButton');
-    if (scientificButtons.classList.contains('hidden')) {
+    if (modeSelector.value === 'scientific') {
+        simpleButtons.classList.add('hidden');
         scientificButtons.classList.remove('hidden');
-        toggleButton.textContent = 'Simple';
     } else {
+        simpleButtons.classList.remove('hidden');
         scientificButtons.classList.add('hidden');
-        toggleButton.textContent = 'Scientific';
     }
 }

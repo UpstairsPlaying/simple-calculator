@@ -24,8 +24,10 @@ body {
     font-size: 18px;
 }
 
-#toggleButton {
+#modeSelector {
     margin-bottom: 10px;
+    font-size: 16px;
+    padding: 5px;
 }
 
 .buttons {
